@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversación Histórica</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    p {
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .widget-box {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Conversación con Personaje Histórico</h1>
+    <p>Presiona el micrófono para comenzar la conversación</p>
+
+    <div class="widget-box">
+      <elevenlabs-convai
+        agent-id="agent_2501kq03bmyaf1wtc7c1j37vxhe1">
+      </elevenlabs-convai>
+    </div>
+  </div>
+
+  <script
+    src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+    async
+    type="text/javascript">
+  </script>
+
+</body>
+</html>
